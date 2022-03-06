@@ -1,0 +1,329 @@
+*{
+  margin:0px;
+  padding: 0;
+  box-sizing:border-box;
+} 
+
+body {
+    font-family:sans-serif;
+    font-size: 15pt;
+}
+
+.mainbody {
+  display: flex;
+
+
+}
+
+.header{
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 15px;
+}
+
+.header_left{
+  display: flex;
+  align-items: center;
+}
+
+.header_left #logo{
+  width: 100px;
+  margin-left: 15px;
+  font-size: 40px;
+  font-weight: 100;
+
+}
+
+#logo {
+  color: red;
+  font-size: 25px;
+
+}
+
+#logo span {
+  color: black;
+  font-weight: 200;
+}
+.header i{
+  padding: 0px  7px;
+  cursor: pointer;
+}
+.search form{
+  border: 1px solid #0A0B1A;
+  box-shadow: 1px#42445A;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.search input{
+  width: 250px;
+  padding: 10px;
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  font-size: 18px;
+}
+
+.search #searchvideo{
+  border: 1px solid;
+  margin: 0;
+  padding: 0;
+  font-size: 26;
+  background: white;
+}
+
+ #mybtn{
+  background: white;
+  color: black;
+  font-size: 46px;
+  border: none;
+}
+
+.material-icons{
+  color: black;
+}
+ 
+.searchvideo{
+  width: 30px;
+  height: 35px;
+}
+
+#menu{
+  font-size: 38px;
+  font-weight: 100;
+  color: white;
+
+  }
+  
+#open{
+  border:none;
+  background: black; 
+  border-radius: 5px;
+}
+
+            /* sidebar start */
+.sidebar{
+  height:100vh - 30px;
+  width: 320px;
+  background: #282A38;
+  color: white;
+  height: auto;
+  
+
+}   
+
+.menutext{
+  width:100%;
+  display:flex;
+  
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+}
+
+.menutitle{
+ margin-left: 75px;
+  font-size: 39px;
+  font-weight: 100;
+  padding: 10px 15px;
+}
+
+ #cross {
+  font-size: 32px;
+  color: white;
+  background: black;
+}
+#close{
+  background: black;
+  border-radius: 6px;
+}
+            
+            
+.category {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}                    
+    
+    
+.sideicon{
+  display: flex;
+  border-bottom: 1px solid #55565E;
+  align-items: center;
+  padding: 25px 12px;
+  margin-left: 10px;
+  border-left: 7px solid transparent;
+  
+}   
+
+.category ul .sideicon li{
+  list-style: none;
+  align-items: center;
+  
+}
+    
+.category ul .sideicon li a{
+  text-decoration: none;
+
+  justify-content: space-between;
+   
+ }  
+ 
+.category ul .sideicon li a i{
+ font-size: 35px;
+ color: black;
+}
+
+.category ul .sideicon li a  .sidetext{
+  font-size: 25px;
+  padding: 10px;
+  margin-left: 10px; 
+  color: white;
+}
+
+
+.sideicon ul .subicon{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-decoration: none;
+  padding: 25px 12px;
+  margin-left: 25px;
+  border-top: 1px solid #55565E;
+  
+  
+  
+}
+
+
+          /*   hover effect */
+          
+.sidebar  .category  .sideicon:hover{
+  border-left-color: #B3366C;
+  background: #0DE4B5;
+
+  cursor: pointer;
+  padding-left: 60px;
+}
+   
+ .category ul .sideicon li a .material-icons.material-icons:hover{
+   color: black;
+ }  
+ 
+ .category ul .sideicon li a .sidetext.sidetext:hover{
+   color: black;
+   
+ }
+ 
+ 
+ .sidebar ul  .sideicon  li a:focus{
+   color: #F0E6B8;
+ }
+ 
+   
+     /* side theme */ 
+.sidebar .category ul .sidetheme li #lightmode {
+   background: #9E9FAD;
+   width: 100%;
+   border-radius: 20px;
+   padding: 10px;
+  padding-bottom: 10px;
+   border: none;
+   bottom: 10px;
+   
+ } 
+ 
+
+          
+ 
+.sidebar .category ul .sidetheme #darkmode{
+width: 100%;
+border-radius: 20px;
+background: #220441;
+padding: 10px;
+bottom: 20px;
+
+}
+
+.sidebar  .category ul  .theme{
+
+  padding-top: 180px; 
+
+}
+
+.theme .sidetheme li i{
+  color: white;
+  font-size: 30px;
+}
+
+.theme .sidetext{
+  color: wheat;
+  font-size: 30px;
+  padding-left: 15px;
+}
+
+.theme .sidetheme{
+  bottom: 50px;
+  margin-bottom: 25px;
+}
+
+
+.mainbody .videos{
+  justify-content: space-between;
+}
+
+.mainbody .svideo img{
+  object-fit: cover;
+  border-radius: 100%;
+  height:40px;
+  width: 40px;
+  
+
+}
+
+.mainbody .svideo{
+  padding-top: 7px;
+  border: border-box;
+  border: solid;
+  padding-bottom: 7px;
+  border-radius: 7px;
+
+}
+
+.mainbody .videos .v_details{
+  display: flex;
+  margin-top: 2px;
+  border: border-box;
+  border: dashed ;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.mainbody .videos .title{
+  margin-top: 7px;
+ padding-left: 10px;
+ 
+  
+}
+  
+.mainbody .videos .eye{
+  padding-left: 7px;
+  padding-right: 7px;
+ 
+}
+
+
+
+
+            /* sidebar End */
+            
+
+  
+  
+  
